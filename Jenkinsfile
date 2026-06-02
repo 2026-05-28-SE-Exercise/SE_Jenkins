@@ -12,14 +12,15 @@ pipeline {
             steps {
                 echo 'Build started'
                 sh 'ls -al'
-                sh 'javac Test.java'
+                sh 'ls -al .idea'
+                sh 'javac .idea/Test.java'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Test started'
-                sh 'java Test Kang 92'
+                sh 'java -cp .idea Test Kang 92'
             }
         }
     }
