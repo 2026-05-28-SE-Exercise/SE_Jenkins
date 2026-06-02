@@ -13,7 +13,7 @@ pipeline {
                 echo 'Build started'
                 sh 'ls -al'
                 sh 'ls -al .idea'
-                sh 'javac .idea/Test.java'
+                sh 'javac .idea/test.java'
             }
         }
 
