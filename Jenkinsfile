@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test started'
-                sh 'java Test Kang 59'
+                sh 'java Test Kang 60'
             }
         }
     }
